@@ -1,0 +1,37 @@
+<section class="people04 cid-uQfKGkWBXC" id="people04-27">
+  <div class="container">
+    <div class="row mb-5 justify-content-center">
+      <div class="col-12 mb-0 content-head">
+        <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+          <strong>{{ title }}</strong>
+        </h3>
+      </div>
+    </div>
+    <div class="row mbr-masonry" data-masonry='{"percentPosition": true}'>
+      <div
+        class="item features-without-image col-12 col-md-6 col-lg-4"
+        *ngFor="let item of details; let i = index"
+      >
+        <div class="item-wrapper">
+          <div class="card-box align-left">
+            <p class="card-text mbr-fonts-style display-7">
+              {{ item.description }}
+            </p>
+            <div class="img-wrapper mt-4 mb-2">
+              <img
+                [src]="item.img"
+                [alt]="item.name"
+                [attr.data-slide-to]="i"
+                [attr.data-bs-slide-to]="i"
+              />
+            </div>
+            <h5 class="card-title mbr-fonts-style display-7">
+              <strong>{{ item.name }}</strong>
+            </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+

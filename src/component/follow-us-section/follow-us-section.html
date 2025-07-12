@@ -1,0 +1,21 @@
+<section data-bs-version="5.1" class="social05 cid-uQghiJhg8S" id="social05-2f">
+  <div class="container">
+    <div class="row">
+      <h3 class="mbr-section-title align-center mb-5 mbr-fonts-style display-2">
+        <strong>{{ title }}</strong>
+      </h3>
+      <div class="col-12">
+        <div class="social-row">
+          <div class="soc-item" *ngFor="let item of socialLinks">
+            <a [href]="item.link" target="_blank">
+              <span
+                class="mbr-iconfont socicon {{ item.icon }} socicon"
+                style="color: rgb(0, 0, 0); fill: rgb(0, 0, 0);"
+              ></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

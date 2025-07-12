@@ -1,0 +1,68 @@
+<section data-bs-version="5.1" class="footer1 cid-uQfJU535YK" once="footers" id="footer01-21">
+  <div class="container">
+    <div class="row mbr-white">
+      <!-- Company -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <h5 class="mbr-section-subtitle mbr-fonts-style mb-2 display-5">
+          <strong>Company</strong>
+        </h5>
+        <ul class="list mbr-fonts-style display-7">
+          <li class="mbr-text item-wrap" *ngFor="let item of companyLinks">{{ item }}</li>
+        </ul>
+      </div>
+
+      <!-- Services 1 -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <h5 class="mbr-section-subtitle mbr-fonts-style mb-2 display-5">
+          <strong>Services</strong>
+        </h5>
+        <ul class="list mbr-fonts-style display-7">
+          <li class="mbr-text item-wrap" *ngFor="let item of services1">{{ item }}</li>
+        </ul>
+      </div>
+
+      <!-- Services 2 -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <h5 class="mbr-section-subtitle mbr-fonts-style mb-2 display-5">
+          <strong>Services</strong>
+        </h5>
+        <ul class="list mbr-fonts-style display-7">
+          <li class="mbr-text item-wrap" *ngFor="let item of services2">{{ item }}</li>
+        </ul>
+      </div>
+
+      <!-- About -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <h5 class="mbr-section-subtitle mbr-fonts-style mb-2 display-5">
+          <strong>About</strong>
+        </h5>
+        <ul class="list mbr-fonts-style display-7">
+          <li class="mbr-text item-wrap" *ngFor="let item of aboutLinks">{{ item }}</li>
+        </ul>
+      </div>
+
+      <!-- Buttons and Socials -->
+      <div class="col-12 mt-5 footer-col">
+        <div class="mbr-section-btn align-left">
+          <a class="btn btn-primary display-7" href="https://tc-personal-coaching-2.web.app">Sign Up</a>
+          <a class="btn btn-success-outline display-7" href="https://tc-personal-coaching-2.web.app">Read More</a>
+        </div>
+
+        <div class="social-row mt-2 display-7">
+          <div class="soc-item" *ngFor="let social of socialLinks">
+            <a [href]="social.link" target="_blank">
+              <span class="mbr-iconfont socicon" [ngClass]="social.icon"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="col-12 mt-4">
+        <p class="mbr-text mb-0 mbr-fonts-style copyright align-center display-7">
+          {{ copyright }}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
