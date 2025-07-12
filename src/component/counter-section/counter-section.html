@@ -1,0 +1,24 @@
+<section data-bs-version="5.1" class="counter1 counters cid-uQfKlxkLEv" id="counter1-22">
+  <div class="container">
+    <div class="row content-row mt-4">
+      <div
+        class="item features-without-image col-12 col-md-6 col-lg-4 item-mb"
+        *ngFor="let counter of counters; let i = index"
+      >
+        <div class="item-wrapper">
+          <div class="title mb-3">
+            <h3 class="count-1 mbr-fonts-style display-1">
+              {{ counter.count }}
+            </h3>
+          </div>
+          <h4 class="card-title mbr-fonts-style display-5">
+            <strong>{{ counter.title }}</strong>
+          </h4>
+          <p class="mbr-text card-text mbr-fonts-style mb-0 display-7">
+            {{ counter.description }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
