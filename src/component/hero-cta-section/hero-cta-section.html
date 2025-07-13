@@ -1,0 +1,25 @@
+<section data-bs-version="5.1" class="header5 cid-uQgl4ierGJ" id="header05-2g">
+  <div class="topbg"></div>
+  <div class="align-center container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-md-12 content-head">
+        <h1 class="mbr-section-title mbr-fonts-style mb-4 display-2">
+          <strong>{{ hero_section.title }}</strong>
+        </h1>
+        <p class="mbr-text mbr-fonts-style mb-4 display-7">
+          {{ hero_section.description }}
+        </p>
+        <div class="mbr-section-btn mt-3">
+          <a class="btn btn-primary display-7" [href]="hero_section.buttonLink" target="_blank">
+            {{ hero_section.buttonText }}
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-5 justify-content-center">
+      <div class="col-12 col-lg-8">
+        <img [src]="hero_section.image" alt="Yoga Header Image" />
+      </div>
+    </div>
+  </div>
+</section>

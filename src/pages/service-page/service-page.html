@@ -1,1 +1,54 @@
-<p>service-page works!</p>
+<div>
+  <app-header></app-header>
+  <app-hero-cta-section [hero_section]="sps.service_page_content.hero_section"></app-hero-cta-section>
+
+  <section data-bs-version="5.1" class="features38 cid-uQgls17EhD" id="features038-2i">
+    <div class="container">
+      <ng-container *ngFor="let items of sps.service_page_content.yoga_services; let i = index">
+        <div class="row justify-content-center mt-5" [ngClass]="{ 'row-reverse': i % 2 !== 0 }">
+          <div class="col-12 col-md-12 col-lg">
+            <div class="text-wrapper align-left">
+              <h1 class="mbr-section-title mbr-fonts-style mb-4 display-2"><strong>{{ items.title }}</strong></h1>
+              <p class="mbr-text align-left mbr-fonts-style mb-4 display-7">{{ items.description }}</p>
+              <div class="mbr-section-btn align-left mt-3">
+                <a class="btn btn-primary display-7" [href]="items.link">Get started</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-12 col-lg-6 image-wrapper">
+            <img class="w-100" [src]="items.image" [alt]="items.title" />
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </section>
+
+  <section data-bs-version="5.1" class="features037 cid-uQglCdIyOl" id="features037-2j">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-4">
+        <div class="col-12 col-md-12">
+          <h5 class="mbr-section-title mbr-fonts-style mt-0 mb-4 display-2">
+            <strong>{{ sps.service_page_content.wellness_section.title }}</strong>
+          </h5>
+          <h6 class="mbr-section-subtitle mbr-fonts-style mt-0 mb-4 display-7">
+            {{ sps.service_page_content.wellness_section.subtitle }}
+          </h6>
+        </div>
+      </div>
+      <div class="col-lg-8 side-features">
+        <div class="item features-without-image col-12 col-md-12 col-lg-6 item-mb" *ngFor="let benefit of sps.service_page_content.wellness_section.benefits">
+          <div class="item-wrapper">
+            <div class="item-content align-left">
+              <h5 class="card-title mbr-fonts-style display-5"><strong>{{ benefit.title }}</strong></h5>
+              <p class="card-text mbr-fonts-style display-7">{{ benefit.description }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <app-footer></app-footer>
+</div>
