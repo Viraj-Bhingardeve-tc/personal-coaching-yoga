@@ -4,7 +4,7 @@ import { RouterLink } from '@angular/router';
 @Component({
   selector: 'app-hero-cta-section',
   standalone: true,
-  imports: [RouterLink],
+  imports: [],
   templateUrl: './hero-cta-section.html',
   styleUrl: './hero-cta-section.css',
 })

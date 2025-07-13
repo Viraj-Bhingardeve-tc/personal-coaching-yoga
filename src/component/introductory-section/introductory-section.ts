@@ -5,7 +5,7 @@ import { title } from 'process';
 @Component({
   selector: 'app-introductory-section',
   standalone:true,
-  imports: [NgIf,NgFor, NgClass],
+  imports: [NgFor, NgClass],
   templateUrl: './introductory-section.html',
   styleUrl: './introductory-section.css',
 })
