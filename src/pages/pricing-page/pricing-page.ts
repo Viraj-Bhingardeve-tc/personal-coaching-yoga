@@ -3,10 +3,11 @@ import { HeaderComponent } from "../../component/header.component/header.compone
 import { Footer } from "../../component/footer/footer";
 import { HeroCtaSection } from "../../component/hero-cta-section/hero-cta-section";
 import { PricingPageService } from '../../service/pricing-page-service';
+import { NgClass, NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-pricing-page',
-  imports: [HeaderComponent, Footer, HeroCtaSection],
+  imports: [HeaderComponent, Footer, HeroCtaSection, NgClass, NgFor],
   templateUrl: './pricing-page.html',
   styleUrl: './pricing-page.css'
 })

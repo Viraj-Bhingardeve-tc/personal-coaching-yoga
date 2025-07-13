@@ -11,7 +11,7 @@ import { NgClass, NgFor } from '@angular/common';
 @Component({
   selector: 'app-service-page',
   standalone: true,
-  imports: [HeaderComponent, Footer, HeroCtaSection,NgFor,NgClass],
+  imports: [HeaderComponent, Footer, HeroCtaSection,NgFor,NgClass,],
   templateUrl: './service-page.html',
   styleUrl: './service-page.css',
 })

@@ -1,4 +1,67 @@
 <div>
   <app-header></app-header>
+
+  <!-- Embrace Wellness Section -->
+  <section data-bs-version="5.1" class="features025 cid-uQgqywDR4M" id="features025-2t">
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-12">
+          <div class="card-wrapper">
+            <div class="row">
+              <div class="col-12 col-md-12 col-lg-6 image-wrapper">
+                <img class="w-100" [src]="es.events_page_content.embrace_wellness.image" [alt]="es.events_page_content.embrace_wellness.title" />
+              </div>
+              <div class="col-12 col-lg col-md-12">
+                <div class="text-wrapper align-left">
+                  <h5 class="mbr-section-title mbr-fonts-style mb-4 display-2">
+                    <strong>{{ es.events_page_content.embrace_wellness.title }}</strong>
+                  </h5>
+                  <p class="price mbr-fonts-style mb-4 display-7"></p>
+                  <p class="mbr-text mbr-fonts-style mb-4 display-7">{{ es.events_page_content.embrace_wellness.description }}</p>
+                  <div class="mbr-section-btn mt-3">
+                    <a class="btn btn-lg btn-primary display-7" [href]="es.events_page_content.embrace_wellness.link">
+                      {{ es.events_page_content.embrace_wellness.linkText }}
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Upcoming Workshops Section -->
+  <section data-bs-version="5.1" class="news01 cid-uQgqNj786l" id="news01-2w">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 mb-5 content-head">
+          <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+            <strong>{{ es.events_page_content.upcoming_workshops.title }}</strong>
+          </h3>
+          <h5 class="mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-4 display-7">
+            {{ es.events_page_content.upcoming_workshops.subtitle }}
+          </h5>
+        </div>
+      </div>
+
+      <div class="row justify-content-left item features-without-image mb-4"
+           *ngFor="let item of es.events_page_content.upcoming_workshops.workshops; let i = index"
+           [ngClass]="{ active: i === 0 }">
+        <div class="col-12 col-lg-4">
+          <h5 class="mbr-card-title mbr-fonts-style mt-0 mb-3 display-7"><strong>{{ item.title }}</strong></h5>
+          <h6 class="mbr-card-subtitle mbr-fonts-style mt-0 mb-3 display-7">{{ item.date }}</h6>
+        </div>
+        <div class="col-12 col-lg-8 item-wrapper">
+          <p class="mbr-text mbr-fonts-style mt-0 display-7">{{ item.description }}</p>
+          <div class="mbr-section-btn">
+            <a class="btn btn-white display-7" [href]="item.link">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <app-footer></app-footer>
 </div>

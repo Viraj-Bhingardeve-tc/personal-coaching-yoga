@@ -1,5 +1,70 @@
 <div>
   <app-header></app-header>
-  <app-hero-cta-section [hero_section]="ps.pricing_cta_content.hero_section"></app-hero-cta-section>
+  <app-hero-cta-section [hero_section]="ps.pricing_page_content.hero_section"></app-hero-cta-section>
+
+  <section data-bs-version="5.1" class="start article2 cid-uQgoH6cTp6" id="article02-2o">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-12 col-lg-6 image-wrapper">
+          <img class="w-100" [src]="ps.pricing_page_content.yoga_training_plan.image" [alt]="ps.pricing_page_content.yoga_training_plan.title" />
+        </div>
+        <div class="col-12 col-md-12 col-lg">
+          <div class="text-wrapper align-left">
+            <h1 class="mbr-section-title mbr-fonts-style mb-4 display-2">
+              <strong>{{ ps.pricing_page_content.yoga_training_plan.title }}</strong>
+            </h1>
+            <p class="mbr-text align-left mbr-fonts-style mb-4 display-7">
+              {{ ps.pricing_page_content.yoga_training_plan.description }}
+            </p>
+            <div class="mbr-section-btn align-left mt-3">
+              <a class="btn btn-success-outline display-7" [href]="ps.pricing_page_content.yoga_training_plan.link">
+                {{ ps.pricing_page_content.yoga_training_plan.buttonText }}
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section data-bs-version="5.1" class="pricing03 cid-uQfIh2Ah08" id="pricing03-1v">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 content-head">
+          <div class="mbr-section-head mb-5">
+            <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+              <strong>{{ ps.pricing_page_content.pricing_section.title }}</strong>
+            </h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="item features-without-image col-12 col-md-6 col-lg-4 item-mb"
+             *ngFor="let plan of ps.pricing_page_content.pricing_section.plans"
+             [ngClass]="{ active: plan.active }">
+          <div class="item-wrapper">
+            <div class="item-head">
+              <h5 class="item-title mbr-fonts-style mb-0 display-5"><strong>{{ plan.name }}</strong></h5>
+              <h6 class="item-subtitle mbr-fonts-style mb-0 display-7"><strong>{{ plan.price }}</strong></h6>
+            </div>
+            <div class="item-content">
+              <p class="mbr-text mbr-fonts-style display-7">{{ plan.description }}</p>
+              <div class="mb-4"></div>
+              <div class="counter-container mbr-text mbr-fonts-style display-7">
+                <ul><li *ngFor="let feature of plan.features">{{ feature }}</li></ul>
+              </div>
+            </div>
+            <div class="mbr-section-btn item-footer">
+              <a [href]="plan.link" class="btn item-btn display-7" [ngClass]="plan.buttonClass">
+                {{ plan.buttonText }}
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <app-footer></app-footer>
 </div>
