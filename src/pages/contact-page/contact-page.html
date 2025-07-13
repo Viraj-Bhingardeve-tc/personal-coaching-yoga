@@ -9,24 +9,34 @@
             <strong>{{ cs.contact_section.title }}</strong>
           </h3>
           <div class="col-lg-12 mx-auto mbr-form" data-form-type="formoid">
-            <form [attr.action]="cs.contact_section.form_action" method="POST" class="mbr-form form-with-styler" data-form-title="Form Name">
-              <input type="hidden" name="email" data-form-email="true" value="" />
+            <form [action]="cs.contact_section.form_action" method="POST" class="mbr-form form-with-styler" data-form-title="Form Name">
+              <input type="hidden" name="email" data-form-email="true" value="6IPD3ux6YkWVp3WPjugK+ErveAB6BVgwM1Qs0ijiAYtMSwKwXkYqaEkHki1XwvCYIc04E1x63BUoq9ADLXROGTONWU5urpSNWXiW3hWvdaZqa/2JeJXgdqFRzJjdrvq0" />
               <div class="row">
                 <div hidden data-form-alert class="alert alert-success col-12">Thanks for filling out the form!</div>
                 <div hidden data-form-alert-danger class="alert alert-danger col-12">Oops...! some problem!</div>
               </div>
               <div class="dragArea row">
-                <input type="text" name="name" placeholder="{{ cs.contact_section.fields.name }}" data-form-field="name" class="form-control col-md col-sm-12 mb-3" id="name-form03-1t" />
-                <input type="email" name="email" placeholder="{{ cs.contact_section.fields.email }}" data-form-field="email" class="form-control col-md col-sm-12 mb-3" id="email-form03-1t" />
-                <input type="tel" name="phone" placeholder="{{ cs.contact_section.fields.phone }}" data-form-field="phone" class="form-control col-12 mb-3" id="phone-form03-1t" />
-                <textarea name="textarea" placeholder="{{ cs.contact_section.fields.message }}" data-form-field="textarea" class="form-control col-12 mb-3" id="textarea-form03-1t"></textarea>
-                <button type="submit" class="btn btn-primary display-7 col-lg-12 col-md-12 col-sm-12 align-center">{{ cs.contact_section.button_text }}</button>
+                <div class="col-md col-sm-12 form-group mb-3" data-for="name">
+                  <input type="text" name="name" [placeholder]="cs.contact_section.fields.name" data-form-field="name" class="form-control" id="name-form03-1t" />
+                </div>
+                <div class="col-md col-sm-12 form-group mb-3" data-for="email">
+                  <input type="email" name="email" [placeholder]="cs.contact_section.fields.email" data-form-field="email" class="form-control" id="email-form03-1t" />
+                </div>
+                <div class="col-12 form-group mb-3" data-for="phone">
+                  <input type="tel" name="phone" [placeholder]="cs.contact_section.fields.phone" data-form-field="phone" class="form-control" id="phone-form03-1t" />
+                </div>
+                <div class="col-12 form-group mb-3" data-for="textarea">
+                  <textarea name="textarea" [placeholder]="cs.contact_section.fields.message" data-form-field="textarea" class="form-control" id="textarea-form03-1t"></textarea>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 align-center mbr-section-btn">
+                  <button type="submit" class="btn btn-primary display-7">{{ cs.contact_section.button_text }}</button>
+                </div>
               </div>
             </form>
           </div>
         </div>
         <div class="col-12 col-lg-6">
-          <img class="w-100" [src]="cs.contact_section.image" alt="Contact Us Image" />
+          <img class="w-100" [src]="cs.contact_section.image" alt="Contact Image" />
         </div>
       </div>
     </div>
