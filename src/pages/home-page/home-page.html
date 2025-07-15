@@ -1,0 +1,210 @@
+<div>
+  <app-header></app-header>
+
+  <section
+    data-bs-version="5.1"
+    class="header1 cid-uQfC1LDgNP"
+    id="header01-1p"
+  >
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-12 col-lg-8 image-wrapper">
+          <img
+            class="w-100"
+            [src]="hs.home_page_content.hero_section.image"
+            alt="Yoga Image"
+          />
+        </div>
+        <div class="col-12 col-lg col-md-12">
+          <div class="text-wrapper align-left">
+            <h1 class="mbr-section-title mbr-fonts-style mb-4 display-2">
+              <strong>{{ hs.home_page_content.hero_section.title }}</strong>
+            </h1>
+            <p class="mbr-text mbr-fonts-style mb-4 display-7">
+              {{ hs.home_page_content.hero_section.description }}
+            </p>
+            <div class="mbr-section-btn mt-3">
+              <a
+                class="btn btn-danger display-7"
+                [href]="hs.home_page_content.hero_section.buttonLink"
+              >
+                {{ hs.home_page_content.hero_section.buttonText }}
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section
+    data-bs-version="5.1"
+    class="counter1 counters cid-uQfKlxkLEv"
+    id="counter1-22"
+  >
+    <div class="container">
+      <div class="row content-row mt-4">
+        <div
+          class="item features-without-image col-12 col-md-6 col-lg-4 item-mb"
+          *ngFor="
+            let item of hs.home_page_content.Counter_Section;
+            let i = index
+          "
+        >
+          <div class="item-wrapper">
+            <div class="title mb-3">
+              <h3 class="count-1 mbr-fonts-style display-1">
+                {{ item.count }}
+              </h3>
+            </div>
+            <h4 class="card-title mbr-fonts-style display-5">
+              <strong>{{ item.title }}</strong>
+            </h4>
+            <p class="mbr-text card-text mbr-fonts-style mb-0 display-7">
+              {{ item.description }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section
+    data-bs-version="5.1"
+    class="header12 cid-uQfWKKvKlj"
+    id="header12-2a"
+  >
+    <div class="text-center container">
+      <div class="row mb-4 justify-content-center">
+        <div class="col-12 col-md-8">
+          <img
+            class="w-100"
+            [src]="hs.home_page_content.download_brochure.imageUrl"
+            alt="Download Yoga Guide"
+          />
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-12 content-head">
+          <h1 class="mbr-section-title mbr-fonts-style mb-4 display-1">
+            <strong>{{ hs.home_page_content.download_brochure.title }}</strong>
+          </h1>
+          <p class="mbr-text mbr-fonts-style mb-4 display-7">
+            {{ hs.home_page_content.download_brochure.description }}
+          </p>
+          <div class="mbr-section-btn mt-4">
+            <a
+              class="btn btn-primary display-7"
+              routerLink="buttonLink"
+              target="_blank"
+            >
+              {{ hs.home_page_content.download_brochure.buttonText }}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <app-introductory-section></app-introductory-section>
+
+  <app-services-section></app-services-section>
+
+  <section class="items3 cid-uQfKWyuqVt" id="items03-29">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 content-head">
+        <div class="mb-5 text-center">
+          <h5 class="mbr-section-title mbr-fonts-style mb-0 display-2">
+            <strong>{{ hs.home_page_content.our_clients.title }}</strong>
+          </h5>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div
+        class="item features-without-image col-12 col-md-6 col-lg-4 mb-4"
+        *ngFor="let item of hs.home_page_content.our_clients.Details"
+      >
+        <div class="item-wrapper p-4 bg-white rounded-3 text-center shadow-sm">
+          <div
+            class="img-wrapper d-flex justify-content-center align-items-center"
+            style="height:150px;"
+          >
+            <img
+              [src]="item.image"
+              [alt]="item.alt"
+              style="max-height:100%;"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<app-testimonials></app-testimonials>
+
+<section data-bs-version="5.1" class="social05 cid-uQghiJhg8S" id="social05-2f">
+  <div class="container">
+    <div class="row">
+      <h3 class="mbr-section-title align-center mb-5 mbr-fonts-style display-2">
+        <strong>{{ hs.home_page_content.follow_us.title }}</strong>
+      </h3>
+      <div class="col-12">
+        <div class="social-row">
+          <div class="soc-item" *ngFor="let item of hs.home_page_content.follow_us.socialLinks">
+            <a [href]="item.link" target="_blank">
+              <span
+                class="mbr-iconfont socicon {{ item.icon }} socicon"
+                style="color: rgb(0, 0, 0); fill: rgb(0, 0, 0);"
+              ></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- mapping -->
+  <section
+    data-bs-version="5.1"
+    class="contacts4 map1 cid-uQfKxlZw2N"
+    id="contacts04-25">
+    <div class="main_wrapper">
+      <div class="b_wrapper">
+        <div class="container-fluid">
+          <div class="row justify-content-start">
+            <div class="col-md-5 col-lg-4 item-wrapper">
+              <h5 class="cardTitle mbr-fonts-style mb-2 display-5">
+                <strong>Contact Us</strong>
+              </h5>
+              <ul class="list mbr-fonts-style display-7">
+                <li class="mbr-text item-wrap">Phone: 09129121080</li>
+                <li class="mbr-text item-wrap">WhatsApp: 09129121080,</li>
+                <li class="mbr-text item-wrap">
+                  CHS LTD Building, Queens 505 A wing Hiranandani Estate Queens
+                  CHS Ltd, Wood Street, behind Greenwhich Building, Patlipada,
+                  Thane, Maharashtra 400607
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="google-map">
+        <iframe
+          frameborder="0"
+          style="border: 0"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6045.3003145248895!2d-73.9884657!3d40.7477229!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9ac1f1b85%3A0x7e33d1c0e7af3be4!2zMzUwIDV0aCBBdmUsIE5ldyBZb3JrLCBOWSAxMDExOCwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1689597362021!5m2!1sen!2sen"
+          allowfullscreen=""
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <app-footer></app-footer>
+</div>
