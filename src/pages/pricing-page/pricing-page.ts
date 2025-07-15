@@ -9,7 +9,6 @@ import { NgClass, NgFor } from '@angular/common';
   selector: 'app-pricing-page',
   imports: [HeaderComponent, Footer, HeroCtaSection, NgClass, NgFor],
   templateUrl: './pricing-page.html',
-  styleUrl: './pricing-page.css'
 })
 export class PricingPage {
 

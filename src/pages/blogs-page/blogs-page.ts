@@ -8,7 +8,6 @@ import { NgClass, NgFor } from '@angular/common';
   selector: 'app-blogs-page',
   imports: [HeaderComponent, Footer, NgFor],
   templateUrl: './blogs-page.html',
-  styleUrl: './blogs-page.css'
 })
 export class BlogsPage {
 

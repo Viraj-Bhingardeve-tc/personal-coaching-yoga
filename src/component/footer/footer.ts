@@ -5,7 +5,6 @@ import { Component } from '@angular/core';
   selector: 'app-footer',
   imports: [NgClass,NgFor],
   templateUrl: './footer.html',
-  styleUrl: './footer.css'
 })
 export class Footer {
 copyright = '© Copyright 2025. Abhay Valsangkar - All Rights Reserved';

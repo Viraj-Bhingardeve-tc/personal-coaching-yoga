@@ -7,7 +7,6 @@ import EmblaCarousel, { EmblaCarouselType } from 'embla-carousel';
   standalone:true,
   imports: [NgFor],
   templateUrl: './services-section.html',
-  styleUrl: './services-section.css',
 })
 export class ServicesSection implements AfterViewInit {
   

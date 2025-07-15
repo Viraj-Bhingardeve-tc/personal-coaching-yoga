@@ -13,7 +13,6 @@ import { NgClass, NgFor } from '@angular/common';
   standalone: true,
   imports: [HeaderComponent, Footer, HeroCtaSection,NgFor,NgClass,],
   templateUrl: './service-page.html',
-  styleUrl: './service-page.css',
 })
 export class ServicePage {
   constructor(public sps: ServicePageService) {}

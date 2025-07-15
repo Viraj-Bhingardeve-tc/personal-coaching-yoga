@@ -6,7 +6,6 @@ import { RouterLink } from '@angular/router';
   standalone: true,
   imports: [],
   templateUrl: './hero-cta-section.html',
-  styleUrl: './hero-cta-section.css',
 })
 export class HeroCtaSection {
   @Input() hero_section: any = {};

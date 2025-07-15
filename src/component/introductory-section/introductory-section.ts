@@ -7,7 +7,6 @@ import { title } from 'process';
   standalone:true,
   imports: [NgFor, NgClass],
   templateUrl: './introductory-section.html',
-  styleUrl: './introductory-section.css',
 })
 export class IntroductorySection {
   

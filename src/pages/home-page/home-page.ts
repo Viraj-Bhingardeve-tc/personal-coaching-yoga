@@ -11,7 +11,6 @@ import { Testimonials } from "../../component/testimonials/testimonials";
   selector: 'app-home-page',
   imports: [HeaderComponent, Footer, NgFor, IntroductorySection, ServicesSection, Testimonials],
   templateUrl: './home-page.html',
-  styleUrl: './home-page.css',
 })
 export class HomePage {
   constructor(public hs: HomePageService) {}

@@ -7,7 +7,6 @@ import { ContactPageService } from '../../service/contact-page-service';
   selector: 'app-contact-page',
   imports: [HeaderComponent, Footer],
   templateUrl: './contact-page.html',
-  styleUrl: './contact-page.css'
 })
 export class ContactPage {
 

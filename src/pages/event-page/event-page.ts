@@ -8,7 +8,6 @@ import { NgClass, NgFor } from '@angular/common';
   selector: 'app-event-page',
   imports: [HeaderComponent, Footer,NgClass, NgFor],
   templateUrl: './event-page.html',
-  styleUrl: './event-page.css'
 })
 export class EventPage {
 
